@@ -1,0 +1,420 @@
+body {
+    font-family: "Outfit", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/*Navbar*/
+.leoNavbar {
+    background-color: transparent;
+}
+
+.contactaBtn {}
+
+#navbarNav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    gap: 24px;
+}
+
+.navBtn {
+    font-family: "Outfit", serif;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.contactaBtn {
+    font-family: "Outfit", serif;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    border-radius: 80px;
+    background: #7FAA3E;
+    padding: 16px 12px;
+}
+
+/*BANNER*/
+
+.bannerHome {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+.logoBanner {
+    width: 20vw;
+}
+
+/* ELEGI */
+
+.elegiSection {
+    position: relative;
+    background: url(./img/bannerImg.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+.elegiSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 0;
+}
+
+.elegiSection>* {
+    position: relative;
+    z-index: 1;
+}
+
+.elegiTitleH2 {
+    color: #000;
+    text-align: center;
+    font-family: "Kadwa", serif;
+    font-size: 33.798px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.372px;
+    margin-bottom: 30px;
+}
+
+.elegiDiv1 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 32px 0;
+}
+
+.misionVision {
+    width: 520px;
+    height: 240px;
+    border-radius: 40px;
+    border: 1px solid #DEDEDE;
+    background: #FFFFFF;
+}
+
+.misionVision2 {
+    padding: 24px;
+}
+
+.elegiIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.elegitext1 {
+    color: #1F1F1F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.elegiLogoTitle {
+    display: flex;
+    gap: 16px;
+    height: fit-content;
+    align-items: center;
+}
+
+.elegiLogoTitle h3 {
+    color: #7FAA3E;
+    font-family: "Kadwa", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.elegiDiv2 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.elegiExperienciaDiv {
+    border-radius: 72.069px 0px 72.069px 72.069px;
+    background: #7FAA3E;
+    backdrop-filter: blur(1.2011494636535645px);
+    padding: 70px 36px;
+}
+
+.elegiExperienciaDiv1 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.elegiExperienciaDiv2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.elegiExperienciaDiv3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*esencia*/
+
+.esenciaTitle {
+    color: #000;
+    text-align: center;
+    font-family: "Kadwa", serif;
+    font-size: 33.798px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.372px;
+}
+
+.videoYutu {
+    margin: 0 5vw;
+    height: 70vh;
+    margin-top: 50px;
+    margin-bottom: 7vw;
+}
+
+/* Que hacemos? */
+
+.hacemosTitle {
+    color: #000;
+    text-align: center;
+    font-family: "Kadwa", serif;
+    font-size: 33.798px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.372px;
+}
+
+.leo-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.leo-card {
+    position: relative;
+    width: 270px;
+    height: 538px;
+    background: white;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leo-card-content {
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.leo-card h3 {
+    color: #5B5450;
+    font-family: "Kadwa", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 111%;
+    letter-spacing: -0.264px;
+    margin: 0;
+}
+
+.leo-card-image {
+    position: absolute;
+    top: auto;
+    border-radius: 40px;
+    bottom: 0;
+    width: 100%;
+    height: 68%;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+}
+
+.leo-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.leo-service-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    border: none;
+    background-color: #7FAA3E;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.leo-card:hover .leo-card-image {
+    height: 100%;
+}
+
+.leo-card:hover .leo-card-image img {
+    transform: scale(1.1);
+}
+
+.leo-card:hover .leo-card-content {
+    opacity: 0;
+}
+
+.leo-card:hover .leo-service-btn {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* Socios estrategicos */
+
+.sociosTitle {
+    margin-top: 5vw;
+    color: #000;
+    text-align: center;
+    font-family: "Kadwa", serif;
+    font-size: 33.798px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.372px;
+}
+
+.socioImg1 {
+    width: 15vw;
+}
+
+.socioImg2 {
+    width: 10vw;
+}
+
+.sociosBigDiv {
+    margin: 0 5vw;
+    ;
+}
+
+.socioDiv {
+    display: flex;
+    border-radius: 24px;
+    background: #EFF6B6;
+    margin-top: 24px;
+    align-items: center;
+    height: 21rem;
+}
+
+.socioTxt {
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+.socioH3 {
+    color: #262626;
+    font-family: "Kadwa", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.socioBtnDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.socioBtn {
+    border-radius: 40px;
+    background: #7FAA3E;
+    display: inline-flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    border: 0;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
