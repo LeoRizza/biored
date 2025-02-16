@@ -11,8 +11,6 @@ body {
     background-color: transparent;
 }
 
-.contactaBtn {}
-
 #navbarNav {
     display: flex;
     justify-content: flex-end;
