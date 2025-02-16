@@ -368,47 +368,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script>
-        window.onload = function () {
-            console.log("Página completamente cargada, iniciando Odometer...");
-
-            function createOdometer(el, finalValue) {
-                if (!el) {
-                    console.error("Elemento no encontrado:", el);
-                    return;
-                }
-
-                el.innerHTML = "0"; // Asegura que inicie desde 0
-                const odometer = new Odometer({
-                    el: el,
-                    value: 0,
-                });
-
-                let hasRun = false;
-
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting && !hasRun) {
-                            console.log(`Iniciando contador en: ${finalValue}`);
-                            odometer.update(finalValue);
-                            hasRun = true; // Evita que la animación se repita
-                            observer.unobserve(el);
-                        }
-                    });
-                }, { threshold: 0.5 });
-
-                observer.observe(el);
-            }
-
-            // Esperamos que los elementos existan en el DOM antes de ejecutarlos
-            setTimeout(() => {
-                createOdometer(document.querySelector(".años-odometer"), 24);
-                createOdometer(document.querySelector(".has-odometer"), 60000);
-                createOdometer(document.querySelector(".usuarios-odometer"), 47000);
-            }, 1000);
-        };
-    </script>
-
+    <script src="./main.js"></script>
 </body>
-
 </html>
