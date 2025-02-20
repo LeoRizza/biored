@@ -11,7 +11,15 @@ body {
     background-color: transparent;
 }
 
-#navbarNav {
+.navItemList {
+    display: flex;
+    padding: 5px 2px;
+    text-align: left;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.leoNav2 {
     display: flex;
     justify-content: flex-end;
 }
@@ -28,6 +36,8 @@ body {
     font-weight: 400;
     line-height: 20px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .contactaBtn {
@@ -52,7 +62,7 @@ body {
     overflow: hidden;
 }
 
-video {
+/* video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,7 +70,7 @@ video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-}
+} */
 
 .banner-content {
     position: absolute;
@@ -125,13 +135,15 @@ video {
 .elegiDiv1 {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 2%;
     margin: 32px 0;
+    max-width: 80vw;
+    width: 100%;
 }
 
 .misionVision {
-    width: 520px;
-    height: 240px;
+    width: 49%;
+    height: auto;
     border-radius: 40px;
     border: 1px solid #DEDEDE;
     background: #FFFFFF;
@@ -174,7 +186,9 @@ video {
 .elegiDiv2 {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 2%;
+    max-width: 80vw;
+    width: 100%;
 }
 
 .elegiExperienciaDiv {
@@ -182,6 +196,7 @@ video {
     background: #7FAA3E;
     backdrop-filter: blur(1.2011494636535645px);
     padding: 70px 36px;
+    width: 32%;
 }
 
 .elegiExperienciaDiv1 {
@@ -221,11 +236,23 @@ video {
     letter-spacing: -0.372px;
 }
 
+#esencia {
+    position: relative;
+    padding: 0 10vw;
+}
+
 .videoYutu {
-    margin: 0 5vw;
-    height: 70vh;
-    margin-top: 50px;
-    margin-bottom: 7vw;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+#my-video {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    max-width: 1200px;
 }
 
 /* Que hacemos? */
@@ -250,7 +277,8 @@ video {
 
 .leo-card {
     position: relative;
-    width: 270px;
+    width: 20vw;
+    max-width: 270px;
     height: 538px;
     background: white;
     border-radius: 40px;
@@ -434,12 +462,26 @@ video {
     width: 100px;
     height: 100%;
     opacity: 0.5;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.alianzaImg:hover {
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 .confianImg {
     width: 100px;
     height: 100%;
     opacity: 0.5;
+    transition: all 0.3s ease-in;
+
+}
+
+.confianImg:hover {
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 .alianzasDiv {
@@ -448,7 +490,7 @@ video {
     gap: 58px;
     justify-content: center;
     margin: 1vw;
-    width: 80vw;
+    width: 60vw;
     flex-wrap: nowrap;
 }
 
@@ -456,7 +498,7 @@ video {
     display: flex;
     justify-content: center;
     margin: 1vw;
-    width: 80vw;
+    width: 60vw;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
@@ -467,6 +509,11 @@ video {
 
 .confian2 {
     width: 220px;
+}
+
+.confian3 {
+    background-color: #000000;
+    padding: 5px;
 }
 
 .confian {
@@ -506,6 +553,7 @@ video {
 .cardLeo {
     max-width: 380px;
     border-radius: 24px;
+    width: 30vw;
 }
 
 .card-img-top {
@@ -691,6 +739,7 @@ video {
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
+    border: none;
 }
 
 /* footer */
@@ -721,6 +770,13 @@ video {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.powered {
+    color: #FFF;
+    font-size: 15;
+    text-align: left;
+    text-decoration: none;
 }
 
 .footerIzq {
@@ -755,4 +811,817 @@ video {
     font-weight: 400;
     line-height: 130.278%;
     margin-top: 20px;
+}
+
+/* ocultar cosas mobile*/
+
+.alianza2 {
+    display: none;
+}
+
+.confianDiv2 {
+    display: none;
+}
+
+.carrouselhacemos {
+    display: none;
+}
+
+.carrouselprensa {
+    display: none;
+}
+
+.elegiDiv22 {
+    display: none;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.leoNavbar49 {
+    display: flex;
+}
+
+.hacemosUl2 {
+    width: fit-content;
+    text-align: left;
+}
+
+.hacemosDivUl2 {
+    display: flex;
+    justify-content: left;
+}
+
+.hacemosDivUl2 li {
+    color: var(--gray800, #4B4B4B);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.435%;
+    /* 30.584px */
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/*
+QUIENES SOMOS?
+*/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+.equipo {
+    height: 100%;
+    background: white;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.equipoBannerText {
+    color: var(--Gray-6, #F2F2F2);
+    font-family: "Kadwa", serif;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 99.126%;
+}
+
+.bannerEquipo {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    background-image: url("./img/equipoBanner.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hacemosDivPage {
+    padding: 5vw 8vw 8vw;
+}
+
+.hacemosh2 {
+    text-align: left;
+    color: #161616;
+    font-family: "Kadwa", serif;
+    font-size: 35.541px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 119%;
+    /* 42.294px */
+}
+
+.hacemosText {
+    color: var(--gray800, #4B4B4B);
+    font-family: "Public Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.435%;
+    text-align: left;
+}
+
+.hacemosUl {
+    width: fit-content;
+    text-align: left;
+}
+
+.hacemosDivUl {
+    display: flex;
+    justify-content: left;
+}
+
+.hacemosDivUl li {
+    color: var(--gray800, #4B4B4B);
+    font-family: "Public Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.435%;
+    /* 30.584px */
+}
+
+.bannerHacemos {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    background-image: url("./img/hacemosBanner.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bannerEquipo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Capa oscura */
+}
+
+/* Asegurar que el texto esté por encima */
+.equipo-banner-content {
+    position: relative;
+    color: white;
+    /* Cambia el color del texto para que sea visible */
+    z-index: 1;
+}
+
+.Gervasio {
+    object-position: top;
+}
+
+.equipoLeoDiv {
+    height: auto;
+    width: 100%;
+    display: flex;
+    min-height: none;
+    max-width: none;
+    margin: 5vw auto;
+}
+
+.text-center {
+    display: flex;
+    justify-content: flex-end;
+    align-content: left;
+}
+
+.equipo-card {
+    margin-bottom: 30px;
+}
+
+.equipo-card img {
+    height: 325px;
+    width: 325px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.equipo-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.equipo-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.equipo-card span {
+    font-weight: bold;
+    color: #7FAA3E;
+}
+
+.contactoWeb {
+    background: #F8F7F0;
+    padding: 2vw 0px 5vw;
+}
+
+.navBtnContacto {
+    color: #000000;
+}
+
+.bannerFinal2 {
+    margin: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./img/banner-final.avif) lightgray 50% / cover no-repeat;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divContactoBottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.iconosDivContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconoContacto23 {
+    background-color: #5B5450;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.contacto-text22 {
+    margin: 0;
+    color: #5B5450;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104.5%;
+
+}
+
+.contacto-text223 {
+    margin: 0;
+    color: #17253E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.5%;
+    letter-spacing: -0.72px;
+}
+
+.contacto333 {
+    text-align: left;
+}
+
+.carrouselContacto {
+    display: none;
+}
+
+/* accordion */
+
+.accordion {
+    width: 80%;
+    margin: 2vw auto;
+}
+
+.accordion-item {
+    margin-bottom: 5px;
+    border: none;
+}
+
+.accordion-item .content {
+    font-size: 12px;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    height: 0px;
+    padding: 0px;
+    background-color: #fafafa;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion input[type="radio"]:checked+.accordion-header+.content {
+    height: auto;
+    padding: 15px;
+}
+
+.accordion-icon {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.accordion input[type="radio"]:checked+.accordion-header .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-header {
+    display: flex;
+    min-height: 100px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: url(./img/hacemosCard.avif);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+}
+
+.accordion-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(91, 84, 80, 0.9);
+}
+
+.accordion-header .accordion-title {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Kadwa", serif;
+    z-index: 20;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.396px;
+}
+
+.estrategicosTitle {
+    color: #5B5450;
+    font-family: "Kadwa", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111%;
+    letter-spacing: -0.352px;
+    text-align: left;
+}
+
+.estrategicosText {
+    color: #5B5450;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%;
+    letter-spacing: -0.22px;
+    text-align: left;
+}
+
+
+/**/
+/*MEDIA QUERIES*/
+/**/
+@media (max-width: 990px) {
+
+    .accordion-header .accordion-title {
+        font-size: 24px;
+    }
+
+    .estrategicosTitle {
+        font-size: 20px;
+    }
+
+    .estrategicosText {
+        font-size: 16px;
+    }
+
+    .leoNavbar49 {
+        display: none;
+    }
+
+    .elegiDiv2 {
+        display: none;
+    }
+
+    .elegiDiv22 {
+        display: flex;
+    }
+
+    .logoBanner {
+        display: none;
+    }
+
+    .banner-content {
+        width: 80vw;
+    }
+
+    .logoBannerText {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 126%;
+    }
+
+    .leoNavbar {
+        background-color: transparent;
+    }
+
+    .btn-menu {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        z-index: 1050;
+    }
+
+    /* Menú Offcanvas */
+
+    .offcanvas.offcanvas-top {
+        height: fit-content;
+    }
+
+    .offcanvas-body {
+        padding: 0;
+    }
+
+    .btn-leo-nav {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .custom-menu {
+        background-color: #5B5450;
+        height: fit-content;
+        max-height: none;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logoPrincipalNav {
+        width: 90px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Botón de cierre */
+    .botonCerrarLeo {
+        color: white;
+        background-color: transparent;
+        font-size: 20px;
+        width: 20px;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+
+    /* Lista de menú */
+    .menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .menu-item {
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        display: block;
+        padding: 12px 20px;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .menu-item.active {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+
+    /* Footer con "Contacto" */
+    .offcanvas-footer {
+        background: #7FAA3E;
+        padding: 18px;
+        text-align: center;
+        width: 100%;
+        border-radius: 0px 0px 0px 40px;
+    }
+
+    .contact-btn {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+    }
+
+
+
+
+
+    .leoNav2 {
+        justify-content: flex-start;
+        padding: 0 16px;
+    }
+
+    .contactaBtn {
+        width: 100%;
+        background-color: #7FAA3E;
+    }
+
+    .elegiTitleH2 {
+        margin: 0;
+    }
+
+    .elegiSection {
+        height: auto;
+        padding: 20px 0;
+        background-position: left;
+    }
+
+    .esenciaTitle {
+        margin-top: 10vh;
+    }
+
+    .elegiDiv1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .elegiExperienciaDiv {
+        width: 100%;
+        margin-top: 20px;
+        padding: 40px 15px;
+    }
+
+    .hacemosTitle {
+        margin-top: 10vh;
+    }
+
+    .sociosTitle {
+        margin-top: 10vh;
+    }
+
+    .elegiDiv2 {
+        flex-direction: column;
+    }
+
+    .misionVision {
+        width: 100%;
+    }
+
+    .alianzasDiv {
+        display: none;
+    }
+
+    .alianza2 {
+        display: block;
+        height: 150px;
+    }
+
+    .confianDiv {
+        display: none;
+    }
+
+    .confianDiv2 {
+        display: flex;
+        width: 100%;
+        height: 150px;
+    }
+
+    .confianImg {
+        opacity: 1;
+    }
+
+    .alianzaImg {
+        opacity: 1;
+    }
+
+    .confian2 {
+        width: 200px;
+    }
+
+    .carrouselhacemos {
+        display: block;
+    }
+
+    .hacemosDiv {
+        display: none;
+    }
+
+    .leo-card {
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .socioTxt {
+        font-size: 16px;
+    }
+
+    .socioH3 {
+        font-size: 20px;
+    }
+
+    .socioTextoDiv {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .socioH3 {
+        text-align: center;
+    }
+
+    .socioBtnDiv {
+        height: auto;
+        margin-bottom: 20px;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socioBtn {
+        margin: 0;
+    }
+
+    .sociosLogoDiv {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .socioImg1 {
+        width: 250px;
+    }
+
+    .socioImg2 {
+        width: 150px;
+    }
+
+    .socioDiv {
+        height: fit-content;
+    }
+
+    .prensaDiv {
+        display: none;
+    }
+
+    .carrouselprensa {
+        display: block;
+    }
+
+    .cardLeo {
+        width: 100%;
+        margin: auto;
+    }
+
+    .footerBiored {
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerDer {
+        order: 200;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footerIzq {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .logoFooter {
+        width: 150px;
+    }
+
+    .bannerFinalTitle {
+        max-width: none;
+        font-size: 25px;
+    }
+
+    .formularioContacto {
+        margin: 0 4vw;
+        width: auto;
+    }
+
+    .inputDiv2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inputDiv {
+        width: 100%;
+    }
+
+    .inputTelefono {
+        width: 100%;
+    }
+
+    .inputCorreo {
+        width: 100%;
+    }
+
+    .inputTexto {
+        width: 100%;
+    }
+
+    .bannerFinal {
+        height: auto;
+        padding: 10vh 0;
+        margin-top: 20px;
+    }
+
+    /* equipo web*/
+
+    .equipoBannerText {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    #esencia {
+        position: relative;
+        padding: 0;
+    }
+
+    .divContactoBottom {
+        flex-direction: column;
+    }
+
+    .equipoLeoDiv {
+        display: none;
+    }
+
+    .carrouselContacto {
+        display: block;
+        margin: auto;
+    }
+
+    .equipo-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        width: 100%;
+        min-height: 400px;
+        /* Ajusta según necesidad */
+        padding: 20px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        filter: invert(100%);
+    }
+
+    #carouselExample {
+        width: 100vw;
+    }
 }

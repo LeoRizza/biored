@@ -12,7 +12,7 @@
     <meta property="og:title" content="Biored - Agricultura Regenerativa e Innovación">
     <meta property="og:description"
         content="Consultoría y desarrollo de tecnologías sustentables para una producción agropecuaria más eficiente y sostenible.">
-    <meta property="og:image" content="https://www.bioredarg.com/images/og-image.jpg">
+    <meta property="og:image" content="./img/biored-logos-01">
     <meta property="og:url" content="https://www.bioredarg.com">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -33,6 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet">
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -47,37 +48,70 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg leoNavbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img class="logoBio" src="./img/logoYellow.svg" alt="Bootstrap" width="65" height="65">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logoBio" src="./img/logoYellow.svg" alt="Logo Biored" width="65" height="65">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="btn btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    ☰
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navItemList">
-                            <a class="navBtn" href="#">Home</a>
-                        </li>
-                        <li class="nav-item navItemList">
-                            <a class="navBtn" href="#">Qué Hacemos</a>
-                        </li>
-                        <li class="nav-item navItemList">
-                            <a class="navBtn" href="#">Quiénes Somos</a>
-                        </li>
-                        <li class="nav-item navItemList">
-                            <a class="navBtn" href="#">Socios Estratégicos</a>
-                        </li>
-                        <li class="nav-item navItemList">
-                            <a class="navBtn" href="#">Prensa</a>
-                        </li>
-                        <li class="nav-item navItemList">
-                            <a class="contactaBtn">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
+            <nav class="navbar fixed-top navbar-expand-lg leoNavbar49">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="logoBio" src="./img/logoYellow.svg" alt="Bootstrap" width="65" height="65">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse leoNav2" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navItemList">
+                                <a class="navBtn" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item navItemList">
+                                <a class="navBtn" href="./hacemos.html">Qué Hacemos</a>
+                            </li>
+                            <li class="nav-item navItemList">
+                                <a class="navBtn" href="./quienes.html">Quiénes Somos</a>
+                            </li>
+                            <li class="nav-item navItemList">
+                                <a class="navBtn" href="./socios.html">Socios Estratégicos</a>
+                            </li>
+                            <li class="nav-item navItemList">
+                                <a class="navBtn" href="./prensa.html">Prensa</a>
+                            </li>
+                            <li class="nav-item navItemList">
+                                <a class="contactaBtn" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </nav>
+
+        <!-- Menú Offcanvas desde ARRIBA -->
+        <div class="offcanvas offcanvas-top custom-menu" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header btn-leo-nav">
+                <button type="button" class="btn-leo-nav" data-bs-dismiss="offcanvas"><img src="./img/close.svg"
+                        class="botonCerrarLeo" alt="boton cerrar"></button>
+            </div>
+            <img class="logoPrincipalNav" src="./img/biored-logos-01.svg" alt="logo mobil principal">
+            <div class="offcanvas-body">
+                <ul class="menu-list">
+                    <li><a href="./index.html" class="menu-item active">Home</a></li>
+                    <li><a href="./hacemos.html" class="menu-item">Qué hacemos</a></li>
+                    <li><a href="./quienes.html" class="menu-item">Quiénes somos</a></li>
+                    <li><a href="./socios.html" class="menu-item">Socios estratégicos</a></li>
+                    <li><a href="./prensa.html" class="menu-item">Prensa</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer fijo con "Contacto" ocupando todo el ancho -->
+            <div class="offcanvas-footer">
+                <a href="./contacto.html" class="contact-btn">Contacto</a>
+            </div>
+        </div>
     </header>
 
     <section class="bannerHome">
@@ -88,7 +122,7 @@
 
         <div class="banner-content">
             <img class="logoBanner" src="./img/biored-logos-01.svg" alt="logo completo">
-            <h4>Innovación en agricultura regenerativa</h4>
+            <h4 class="logoBannerText">Innovación en agricultura regenerativa</h4>
         </div>
     </section>
 
@@ -134,29 +168,45 @@
                     <p>usuarios conectados a nuestras redes</p>
                 </div>
             </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide elegiDiv22" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item alianzasItem active" data-bs-interval="1000">
+                        <div class="elegiExperienciaDiv elegiExperienciaDiv1">
+                            <h2><span class="años-odometer odometer">+40</span> años</h2>
+                            <p>de experiencia en el sector agropecuario</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item alianzasItem" data-bs-interval="1000">
+                        <div class="elegiExperienciaDiv elegiExperienciaDiv2">
+                            <h2>+<span class="has-odometer odometer">+60.000 has</span> has</h2>
+                            <p>asesoradas bajo agricultura regenerativa</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item alianzasItem" data-bs-interval="1000">
+                        <div class="elegiExperienciaDiv elegiExperienciaDiv3">
+                            <h2>+<span class="usuarios-odometer odometer">+47.000</span></h2>
+                            <p>usuarios conectados a nuestras redes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section>
+    <section id="esencia">
         <h2 class="esenciaTitle">Nuestra Esencia</h2>
         <div class="videoYutu">
-            <!-- <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/WnvjHjjKVmg"
-                title="Biored Video" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe> -->
-            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/WnvjHjjKVmg?controls=0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+            <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
+                <source src="./img/home2.mp4" type="video/mp4">
+                Tu navegador no soporta videos en HTML5.
+            </video>
 
         </div>
     </section>
 
-    <section>
+    <section id="hacemos">
         <h2 class="hacemosTitle">¿Qué hacemos?</h2>
-        <div class="leo-cards-container">
+        <div class="leo-cards-container hacemosDiv">
             <div class="leo-card">
                 <div class="leo-card-content">
                     <h3>Consultoría y Dirección Técnica</h3>
@@ -197,14 +247,74 @@
                 </div>
             </div>
         </div>
-    </section>
+        <div class="carrouselhacemos">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="leo-card">
+                            <div class="leo-card-content">
+                                <h3>Consultoría y Dirección Técnica</h3>
+                            </div>
+                            <div class="leo-card-image">
+                                <img src="img/card1.avif" alt="Consultoría">
+                                <button class="leo-service-btn">Ver Servicio</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="leo-card">
+                            <div class="leo-card-content">
+                                <h3>Herramientas de recomendación agronómica basadas en IA</h3>
+                            </div>
+                            <div class="leo-card-image">
+                                <img src="img/card2.avif" alt="IA en el Agro">
+                                <button class="leo-service-btn">Ver Servicio</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="leo-card">
+                            <div class="leo-card-content">
+                                <h3>HUB de Capacitaciones</h3>
+                            </div>
+                            <div class="leo-card-image">
+                                <img src="img/card3.avif" alt="Capacitaciones">
+                                <button class="leo-service-btn">Ver Servicio</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="leo-card">
+                            <div class="leo-card-content">
+                                <h3>I+D de Productos y Tecnologías</h3>
+                            </div>
+                            <div class="leo-card-image">
+                                <img src="img/card4.avif" alt="Investigación y Desarrollo">
+                                <button class="leo-service-btn">Ver Servicio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section id="socios">
     <h2 class="sociosTitle">Socios Estratégicos</h2>
     <div class="sociosBigDiv ">
-        <div class="socioDiv row gx-5">
-            <div class="col-3">
+        <div class="socioDiv d-flex flex-column flex-lg-row gx-5">
+            <div class="col-3 sociosLogoDiv">
                 <img class="socioImg1" src="./img/socio1.avif" alt="agro design logo">
             </div>
-            <div class="col-7">
+            <div class="col-7 socioTextoDiv">
                 <h3 class="socioH3">Agrodesign</h3>
                 <p class="socioTxt">Diseño de campos para convertirlos en paisajes multifuncionales. A partir de un
                     analisis del campo,
@@ -217,11 +327,11 @@
                 <button class="socioBtn">Ver más</button>
             </div>
         </div>
-        <div class="socioDiv row gx-5">
-            <div class="col-3">
+        <div class="socioDiv d-flex flex-column flex-lg-row gx-5">
+            <div class="col-3 sociosLogoDiv">
                 <img class="socioImg2" src="./img/socio2.avif" alt="grupo forja logo">
             </div>
-            <div class="col-7">
+            <div class="col-7 socioTextoDiv">
                 <h3 class="socioH3">Camas Biológicas</h3>
                 <p class="socioTxt">Tecnología sustentable y biológicamente activa que retiene y degrada
                     microbiológicamente, y de manera
@@ -245,12 +355,31 @@
             <img class="alianzaImg" src="./img/alianza5.avif" alt="">
         </div>
     </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide alianza2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item alianzasItem active" data-bs-interval="1000">
+                <img class="alianzaImg" src="./img/alianza1.avif" alt="">
+            </div>
+            <div class="carousel-item alianzasItem" data-bs-interval="1000">
+                <img class="alianzaImg" src="./img/alianza2.avif" alt="">
+            </div>
+            <div class="carousel-item alianzasItem" data-bs-interval="1000">
+                <img class="alianzaImg" src="./img/alianza3.avif" alt="">
+            </div>
+            <div class="carousel-item alianzasItem" data-bs-interval="1000">
+                <img class="alianzaImg" src="./img/alianza4.avif" alt="">
+            </div>
+            <div class="carousel-item alianzasItem" data-bs-interval="1000">
+                <img class="alianzaImg" src="./img/alianza5.avif" alt="">
+            </div>
+        </div>
+    </div>
     <div class="confian">
         <h3 class="alianzasTitle">Confían en nosotros</h3>
         <div class="confianDiv">
             <img class="confianImg" src="./img/confian1.avif" alt="">
             <img class="confianImg" src="./img/confian2.avif" alt="">
-            <img class="confianImg" src="./img/confian3.avif" alt="">
+            <img class="confianImg confian3" src="./img/confian3.avif" alt="">
             <img class="confianImg" src="./img/confian4.avif" alt="">
             <img class="confianImg" src="./img/confian5.avif" alt="">
             <img class="confianImg" src="./img/confian6.avif" alt="">
@@ -261,42 +390,146 @@
             <img class="confianImg" src="./img/confian11.avif" alt="">
         </div>
     </div>
-    <section>
-
-    </section>
-    <h2 class="prensaTitle">Prensa</h2>
-    <div class="prensaDiv">
-        <div class="card cardLeo">
-            <img src="./img/prensa1.avif" class="card-img-top" alt="articulo presa imagen yuyo">
-            <div class="card-body">
-                <h5 class="card-title">Paisajes productivos multifuncionales: la iniciativa de dos ingenieros agrónomos
-                    argentinos</h5>
-                <p class="card-text">Los paisajes productivos multifuncionales son superficies terrestres que tienen 20%
-                    de su superficie dedicada a biodiversidad...</p>
-                <a href="#" class="btnPrensa">Leer más</a>
+    <div id="carouselExampleSlidesOnly" class="carousel slide confianDiv2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item confianItem active" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian1.avif" alt="">
             </div>
-        </div>
-        <div class="card cardLeo">
-            <img src="./img/prensa2.avif" class="card-img-top" alt="imagen prensa hombre campo">
-            <div class="card-body">
-                <h5 class="card-title">Esos raros cultivos nuevos: Lucas Andreoni lidera una novedosa forma de pensar la
-                    agricultura...</h5>
-                <p class="card-text">En el sector agropecuario hay aires de cambio de mentalidad. Quizá no por gusto,
-                    sino por necesidad. Hacer lo mismo durante mucho tiempo puede entenderse como...</p>
-                <a href="#" class="btnPrensa">Leer más</a>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian2.avif" alt="">
             </div>
-        </div>
-        <div class="card cardLeo">
-            <img src="img/prensa1.avif" class="card-img-top" alt="articulo presa imagen yuyo">
-            <div class="card-body">
-                <h5 class="card-title">Paisajes productivos multifuncionales: la iniciativa de dos ingenieros agrónomos
-                    argentinos</h5>
-                <p class="card-text">Los paisajes productivos multifuncionales son superficies terrestres que tienen 20%
-                    de su superficie dedicada a biodiversidad...</p>
-                <a href="#" class="btnPrensa">Leer más</a>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg confian3" src="./img/confian3.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian4.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian5.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian6.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg confian2" src="./img/confian7.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian8.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian9.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg confian2" src="./img/confian10.avif" alt="">
+            </div>
+            <div class="carousel-item confianItem" data-bs-interval="1000">
+                <img class="confianImg" src="./img/confian11.avif" alt="">
             </div>
         </div>
     </div>
+    <section>
+        <h2 class="prensaTitle">Prensa</h2>
+        <div class="prensaDiv">
+            <div class="card cardLeo">
+                <img src="./img/prensa1.avif" class="card-img-top" alt="articulo prensa imagen yuyo">
+                <div class="card-body">
+                    <h5 class="card-title">Paisajes productivos multifuncionales: la iniciativa de dos ingenieros
+                        agrónomos
+                        argentinos</h5>
+                    <p class="card-text">Los paisajes productivos multifuncionales son superficies terrestres que tienen
+                        20%
+                        de su superficie dedicada a biodiversidad...</p>
+                    <a href="#" class="btnPrensa">Leer más</a>
+                </div>
+            </div>
+            <div class="card cardLeo">
+                <img src="./img/prensa2.avif" class="card-img-top" alt="imagen prensa hombre campo">
+                <div class="card-body">
+                    <h5 class="card-title">Esos raros cultivos nuevos: Lucas Andreoni lidera una novedosa forma de
+                        pensar la
+                        agricultura...</h5>
+                    <p class="card-text">En el sector agropecuario hay aires de cambio de mentalidad. Quizá no por
+                        gusto,
+                        sino por necesidad. Hacer lo mismo durante mucho tiempo puede entenderse como...</p>
+                    <a href="#" class="btnPrensa">Leer más</a>
+                </div>
+            </div>
+            <div class="card cardLeo">
+                <img src="img/prensa1.avif" class="card-img-top" alt="articulo presa imagen yuyo">
+                <div class="card-body">
+                    <h5 class="card-title">Paisajes productivos multifuncionales: la iniciativa de dos ingenieros
+                        agrónomos
+                        argentinos</h5>
+                    <p class="card-text">Los paisajes productivos multifuncionales son superficies terrestres que tienen
+                        20%
+                        de su superficie dedicada a biodiversidad...</p>
+                    <a href="#" class="btnPrensa">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="carrouselprensa">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- Contenido del carrusel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card cardLeo">
+                            <img src="./img/prensa1.avif" class="card-img-top" alt="articulo prensa imagen yuyo">
+                            <div class="card-body">
+                                <h5 class="card-title">Paisajes productivos multifuncionales: la iniciativa de dos
+                                    ingenieros agrónomos argentinos</h5>
+                                <p class="card-text">Los paisajes productivos multifuncionales son superficies
+                                    terrestres que tienen 20% de su superficie dedicada a biodiversidad...</p>
+                                <a href="#" class="btnPrensa">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card cardLeo">
+                            <img src="./img/prensa2.avif" class="card-img-top" alt="imagen prensa hombre campo">
+                            <div class="card-body">
+                                <h5 class="card-title">Esos raros cultivos nuevos: Lucas Andreoni lidera una novedosa
+                                    forma de pensar la agricultura...</h5>
+                                <p class="card-text">En el sector agropecuario hay aires de cambio de mentalidad...</p>
+                                <a href="#" class="btnPrensa">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card cardLeo">
+                            <img src="img/prensa1.avif" class="card-img-top" alt="articulo prensa imagen yuyo">
+                            <div class="card-body">
+                                <h5 class="card-title">Paisajes productivos multifuncionales: la iniciativa de dos
+                                    ingenieros agrónomos argentinos</h5>
+                                <p class="card-text">Los paisajes productivos multifuncionales son superficies
+                                    terrestres que tienen 20% de su superficie dedicada a biodiversidad...</p>
+                                <a href="#" class="btnPrensa">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="seccionContacto">
         <div class="ContactoTitleDiv">
@@ -327,7 +560,8 @@
                         class="inputTelefono">
                 </div>
             </div>
-            <div style="margin: 0">
+            <div style="margin: 0;text-align: left;">
+                <label class="labelContacto" for="telefono">Mensaje (opcional)</label>
                 <textarea id="mensaje" name="mensaje" placeholder="Queremos saber qué tenés en mente" required
                     class="inputMensaje"></textarea>
             </div>
@@ -345,12 +579,13 @@
     <footer class="footerBiored">
         <div class="footerDer">
             <img src="./img/footerLogo.svg" class="logoFooter" alt="logo biored footer">
-            <p class="derechos">© 2024. Todos los derechos reservados.</p>
+            <p class="derechos">© 2025 Todos los derechos reservados.</p>
+            <a href="https://wearebilab.com/" class="powered">Powered by <strong>bi.lab | Agency</strong></a>
         </div>
         <div class="footerIzq">
             <p class="footerContact">Contacto</p>
-            <p class="footerDir">Av. Corrientes 800,</p>
-            <p class="footerDir">C1008 CABA.</p>
+            <p class="footerDir">Laboulaye,</p>
+            <p class="footerDir">Córdoba.</p>
             <p class="footerMail">info@biored.com</p>
             <div>
                 <img src="./img/redesfooter1.svg" alt="">
@@ -368,6 +603,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>

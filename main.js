@@ -11,7 +11,6 @@ document.querySelectorAll(".leo-card").forEach((card) => {
 });
 
 /* contador */
-
 window.onload = function () {
     console.log("Página completamente cargada, iniciando Odometer...");
 
@@ -33,7 +32,13 @@ window.onload = function () {
             entries.forEach(entry => {
                 if (entry.isIntersecting && !hasRun) {
                     console.log(`Iniciando contador en: ${finalValue}`);
+
+                    // Formatear el número con puntos
+                    const formattedValue = finalValue.toLocaleString("en-US");
+
                     odometer.update(finalValue);
+                    el.innerHTML = formattedValue; // Sobrescribe el valor con el formato correcto
+                    
                     hasRun = true; // Evita que la animación se repita
                     observer.unobserve(el);
                 }
@@ -50,3 +55,21 @@ window.onload = function () {
         createOdometer(document.querySelector(".usuarios-odometer"), 47000);
     }, 1000);
 };
+
+
+/*scroll*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".leoNavbar");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {  // Si el usuario scrollea más de 50px
+            navbar.style.background = "rgba(91, 84, 80, 0.5)"; // Fondo semitransparente
+            navbar.style.backdropFilter = "blur(10px)"; // Efecto de desenfoque
+            navbar.style.transition = "all 0.3s ease-in-out"; // Transición suave
+        } else {
+            navbar.style.background = "transparent"; // Fondo transparente cuando está arriba
+            navbar.style.backdropFilter = "none"; // Quita el desenfoque
+        }
+    });
+});
