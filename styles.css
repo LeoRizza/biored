@@ -4,19 +4,81 @@ body {
     padding: 0;
     background-color: #ffffff;
     text-align: center;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Generales */
+
+.navItemList.active-page {
+    background-color: rgb(61, 52, 45);
+    transition: background-color 0.3s ease;
+}
+
+.btnPrensa::after {
+    content: " →";
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btnPrensa:hover::after {
+    transform: translateX(10px);
+}
+
+
+.odometer-formatting-mark {
+    display: none;
+    color: #ffffff;
+}
+
+.botonWhatsApp img {
+    width: 50px;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.botonWhatsApp {
+    display: none;
+}
+
+.btnHoverGreen {
+    transition: background-color 0.5s ease;
+}
+
+.btnHoverGreen:hover {
+    background-color: #5E7E2E;
 }
 
 /*Navbar*/
 .leoNavbar {
-    background-color: transparent;
+    background-color: #5B5450;
 }
 
 .navItemList {
     display: flex;
-    padding: 5px 2px;
+    padding: 0 15px;
     text-align: left;
     gap: 10px;
     align-self: stretch;
+    border-radius: 24px;
+    transition: background-color 0.5s ease;
+}
+
+.navItemList:hover {
+    background-color: #3d342d;
 }
 
 .leoNav2 {
@@ -34,6 +96,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    height: 44px;
     line-height: 20px;
     text-decoration: none;
     display: flex;
@@ -50,7 +113,13 @@ body {
     text-decoration: none;
     border-radius: 80px;
     background: #7FAA3E;
-    padding: 16px 12px;
+    padding: 12px 12px;
+    display: flex;
+    transition: background-color 0.5s ease;
+}
+
+.contactaBtn:hover {
+    background: #5E7E2E;
 }
 
 /*BANNER*/
@@ -58,19 +127,9 @@ body {
 .bannerHome {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
 }
-
-/* video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-} */
 
 .banner-content {
     position: absolute;
@@ -96,12 +155,12 @@ body {
     background: url(./img/bannerImg.avif);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 5vw;
+    padding: 2vw 5vw 6vw;
 }
 
 .elegiSection::before {
@@ -192,8 +251,8 @@ body {
 }
 
 .elegiExperienciaDiv {
-    border-radius: 72.069px 0px 72.069px 72.069px;
-    background: #7FAA3E;
+    border-radius: 72.069px 0 72.069px 72.069px;
+
     backdrop-filter: blur(1.2011494636535645px);
     padding: 70px 36px;
     width: 32%;
@@ -201,6 +260,7 @@ body {
 
 .elegiExperienciaDiv1 {
     color: #FFFFFF;
+    background: #7FAA3E;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -209,6 +269,7 @@ body {
 
 .elegiExperienciaDiv2 {
     color: #FFFFFF;
+    background: #5E7E2E;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -217,6 +278,7 @@ body {
 
 .elegiExperienciaDiv3 {
     color: #FFFFFF;
+    background: #5B5450;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -234,6 +296,7 @@ body {
     font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.372px;
+    margin-top: 2vw;
 }
 
 #esencia {
@@ -249,10 +312,44 @@ body {
 }
 
 #my-video {
+    position: absolute;
     width: 100%;
     margin: auto;
     height: 100%;
+    border-radius: 25px;
     max-width: 1200px;
+    object-fit: cover; 
+}
+
+#my-video3 {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    border-radius: 25px;
+    max-width: 1200px;
+    object-fit: cover; 
+}
+
+#my-video2 {
+    width: 700px;
+    margin: auto;
+    height: 300px;
+    max-width: 1200px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/**/
+
+.onusTitle {
+    text-align: center;
+    font-family: "Kadwa", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+    margin-top: 2vw;
 }
 
 /* Que hacemos? */
@@ -266,6 +363,7 @@ body {
     font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.372px;
+    margin-top: 2vw;
 }
 
 .leo-cards-container {
@@ -383,6 +481,10 @@ body {
     letter-spacing: -0.372px;
 }
 
+.sociosTitleMobile {
+    display: none;
+}
+
 .socioImg1 {
     width: 15vw;
 }
@@ -393,8 +495,37 @@ body {
 
 .sociosBigDiv {
     margin: 0 5vw;
-    ;
+    display: block;
 }
+
+.sociosCarousel {
+    width: 100vw;
+    margin: 0 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex; 
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding-bottom: 10px;
+    scrollbar-width: none; 
+}
+
+/* Oculta el scrollbar en Chrome y Safari */
+.sociosCarousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-card-socios {
+    flex: 0 0 auto;
+    width: 80vw;
+    min-width: 300px;
+    max-width: 350px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+}
+
 
 .socioDiv {
     display: flex;
@@ -459,7 +590,7 @@ body {
 }
 
 .alianzaImg {
-    width: 100px;
+    width: 7vw;
     height: 100%;
     opacity: 0.5;
     transition: all 0.3s ease-in;
@@ -472,7 +603,7 @@ body {
 }
 
 .confianImg {
-    width: 100px;
+    width: 7vw;
     height: 100%;
     opacity: 0.5;
     transition: all 0.3s ease-in;
@@ -488,27 +619,27 @@ body {
     display: flex;
     flex-direction: row;
     gap: 58px;
-    justify-content: center;
+    justify-content: space-between;
     margin: 1vw;
-    width: 60vw;
+    align-items: center;
+    width: 80vw;
     flex-wrap: nowrap;
 }
 
 .confianDiv {
     display: flex;
     justify-content: center;
-    margin: 1vw;
-    width: 60vw;
+    margin: 1vw 0 2vw;
+    width: 80vw;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     gap: 40px 58.411px;
     flex-wrap: wrap;
-    margin-bottom: 12vw;
 }
 
 .confian2 {
-    width: 220px;
+    width: 150px;
 }
 
 .confian3 {
@@ -516,11 +647,17 @@ body {
     padding: 5px;
 }
 
+.confian4 {
+    width: 80px;
+}
+
 .confian {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
 }
 
 .alianzas {
@@ -528,6 +665,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.alianza29 {
+    width: 200px;
 }
 
 /* Prensa */
@@ -550,10 +693,31 @@ body {
     gap: 16px;
 }
 
+.prensaSectionWeb {
+    margin: 2vw 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.prensaCardLeo {
+    width: 100%;
+    max-width: 380px;
+    padding: 0;
+    margin: 0;
+    border-radius: 24px;
+}
+
+.prensaDivWeb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
 .cardLeo {
     max-width: 380px;
     border-radius: 24px;
-    width: 30vw;
+    width: 25vw;
 }
 
 .card-img-top {
@@ -629,7 +793,7 @@ body {
 }
 
 .formularioContacto {
-    width: 60vw;
+    width: 75vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -671,9 +835,8 @@ body {
     color: #fff;
     height: 170px;
     resize: none;
-    /* Desactiva el redimensionamiento manual */
+    color: #000000;
     overflow: hidden;
-    /* Oculta el scroll */
     transition: border-color 0.3s ease;
 }
 
@@ -697,6 +860,8 @@ body {
     border-radius: 85px;
     background: #7FAA3E;
     padding: 15px 30px;
+    width: 80%;
+    margin: 0 auto;
     border: none;
     font-size: 1.2rem;
     color: #FFFFFF;
@@ -746,7 +911,7 @@ body {
 
 .footerBiored {
     display: flex;
-    padding: 85px 20vw;
+    padding: 85px 20vw 20px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -813,6 +978,10 @@ body {
     margin-top: 20px;
 }
 
+.footerDivRedes {
+    display: flex;
+    gap: 10px;
+}
 /* ocultar cosas mobile*/
 
 .alianza2 {
@@ -827,9 +996,56 @@ body {
     display: none;
 }
 
-.carrouselprensa {
+/* .carrouselprensa {
+    display: none;
+} */
+
+/* Estilos del contenedor */
+.carousel-container {
+    width: 80vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 16px;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+}
+
+/* Oculta el scrollbar en Chrome, Safari */
+.carousel-container::-webkit-scrollbar {
     display: none;
 }
+
+/* Estilos de las cards */
+.carousel-card {
+    flex: 0 0 80%;
+    max-width: 350px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.carousel-card h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.carousel-card p {
+    font-size: 20px;
+    color: #8D94A2;
+}
+
+/*fin*/
 
 .elegiDiv22 {
     display: none;
@@ -841,6 +1057,7 @@ body {
 
 .leoNavbar49 {
     display: flex;
+    background: #5B5450;
 }
 
 .hacemosUl2 {
@@ -885,7 +1102,7 @@ QUIENES SOMOS?
 }
 
 .equipoBannerText {
-    color: var(--Gray-6, #F2F2F2);
+    color: #F2F2F2;
     font-family: "Kadwa", serif;
     font-size: 3vw;
     font-style: normal;
@@ -904,6 +1121,20 @@ QUIENES SOMOS?
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.equipoProloge {
+    padding: 2vw 7vw 0;
+}
+
+.equipoPrologueText {
+    color: #4B4B4B;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 99.126%;
+    /* 29.738px */
 }
 
 .hacemosDivPage {
@@ -971,8 +1202,17 @@ QUIENES SOMOS?
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    /* Capa oscura */
+    background: rgba(91, 84, 80, 0.6);
+}
+
+.bannerHacemos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(91, 84, 80, 0.6);
 }
 
 /* Asegurar que el texto esté por encima */
@@ -999,11 +1239,22 @@ QUIENES SOMOS?
 .text-center {
     display: flex;
     justify-content: flex-end;
-    align-content: left;
+    align-content: flex-start;
+}
+
+.textEquipo {
+    text-align: left;
+    padding: 0 5vw;
+    width: 100%;
 }
 
 .equipo-card {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
 }
 
 .equipo-card img {
@@ -1025,17 +1276,14 @@ QUIENES SOMOS?
 }
 
 .equipo-card span {
-    font-weight: bold;
-    color: #7FAA3E;
+    font-size: 17.802px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .contactoWeb {
     background: #F8F7F0;
-    padding: 2vw 0px 5vw;
-}
-
-.navBtnContacto {
-    color: #000000;
+    padding: 2vw 0 5vw;
 }
 
 .bannerFinal2 {
@@ -1050,9 +1298,9 @@ QUIENES SOMOS?
 
 .divContactoBottom {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 100px;
+    width: 70vw;
+    justify-content: space-between;
+    margin: 100px auto 0;
     gap: 20px;
 }
 
@@ -1067,6 +1315,7 @@ QUIENES SOMOS?
     background-color: #5B5450;
     width: 40px;
     height: 40px;
+    min-width: 40px;
     border-radius: 10px;
     align-content: center;
 }
@@ -1109,6 +1358,19 @@ QUIENES SOMOS?
 .accordion-item {
     margin-bottom: 5px;
     border: none;
+    position: relative;
+}
+
+.accordion-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    z-index: 0;
 }
 
 .accordion-item .content {
@@ -1120,8 +1382,8 @@ QUIENES SOMOS?
 }
 
 .accordion .content {
-    height: 0px;
-    padding: 0px;
+    height: 0;
+    padding: 0;
     background-color: #fafafa;
     border-top: 1px solid #ccc;
     overflow: hidden;
@@ -1139,32 +1401,28 @@ QUIENES SOMOS?
     transition: all 0.5s ease;
 }
 
-.accordion input[type="radio"]:checked+.accordion-header .accordion-icon {
+.accordion-header .accordion-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item.open .accordion-icon {
     transform: rotate(180deg);
 }
 
+
 .accordion-header {
     display: flex;
-    min-height: 100px;
+    min-height: 80px;
     height: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 0 20px;
     background: url(./img/hacemosCard.avif);
     cursor: pointer;
     font-weight: bold;
     text-align: left;
     position: relative;
-}
-
-.accordion-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(91, 84, 80, 0.9);
+    border-radius: 25px; 
 }
 
 .accordion-header .accordion-title {
@@ -1172,7 +1430,7 @@ QUIENES SOMOS?
     color: #ffffff;
     font-family: "Kadwa", serif;
     z-index: 20;
-    font-size: 2vw;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -1180,9 +1438,8 @@ QUIENES SOMOS?
 }
 
 .estrategicosTitle {
-    color: #5B5450;
     font-family: "Kadwa", serif;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 111%;
@@ -1191,7 +1448,6 @@ QUIENES SOMOS?
 }
 
 .estrategicosText {
-    color: #5B5450;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1200,18 +1456,178 @@ QUIENES SOMOS?
     text-align: left;
 }
 
+.hacemosAsesoriaImg {
+    width: 500px;
+    height: 400px;
+    border-radius: 25px;
+    object-fit: cover;
+}
 
+/**/
+/*Socios Estratégicos*/
+/**/
+.sectionSociosWeb {
+    margin: 2vw 5vw;
+}
+
+.agrodesignLogo {
+    width: 400px;
+}
+
+.forjaLogo {
+    width: 200px;
+}
+
+.textoSociosDesc {
+    text-align: left;
+    color: #4B4B4B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%;
+}
+
+.content-section {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.content-section img {
+    max-width: 100%;
+}
+
+.divTextInter {
+    color: #4B4B4B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%;
+    align-self: stretch;
+    text-align: left;
+}
+
+.socioImgSegunda {
+    border-radius: 24px;
+    width: 100%;
+    height: 450px;
+}
+
+.divPadreListarSocios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+.divListaSocios {
+    text-align: left;
+    color: #4B4B4B;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 99.126%;
+}
+
+.sociosCarousel {
+    display: none;
+}
+
+.listarSocios {
+    color: #4B4B4B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%;
+}
+
+.conoceSocioBtn {
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 80px;
+    border: none;
+    background: #7FAA3E;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.prensaCarouselSection {
+    display: none;
+}
+
+.sociosBtnDiv {
+    display: none;
+}
+
+.conoceSocioBtn2 {
+    border: 2px solid #7D7D7D;
+    padding: 10px;
+    border-radius: 50px;
+    color: #7D7D7D;
+}
 /**/
 /*MEDIA QUERIES*/
 /**/
 @media (max-width: 990px) {
+    .carousel-container {
+        margin: 0 20px;
+        width: 90vw;
+    }
+
+    .sociosBigDiv{
+        display: none;
+    }
+
+    .socioDiv {
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+    }
+
+    .sociosCarousel {
+        display: flex;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .carousel-card img {
+        height: 200px;
+    }
+        
+    .carousel-card p {
+        font-size: 14px;
+    }
+
+    /* fin */
+
+    .navbar-brand {
+        width: 100%;
+    }
 
     .accordion-header .accordion-title {
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .estrategicosTitle {
         font-size: 20px;
+    }
+
+    .hacemosAsesoriaImg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .accordion {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
     }
 
     .estrategicosText {
@@ -1222,8 +1638,20 @@ QUIENES SOMOS?
         display: none;
     }
 
+    .leoNavbar {
+        position: fixed;
+        top: 0;
+        height: auto;
+        z-index: 200;
+        width: 100%;
+    }
+
     .elegiDiv2 {
         display: none;
+    }
+
+    .logoBio {
+        width: 100px;
     }
 
     .elegiDiv22 {
@@ -1245,8 +1673,9 @@ QUIENES SOMOS?
         line-height: 126%;
     }
 
-    .leoNavbar {
-        background-color: transparent;
+    .bannerHome {
+        height: 350px;
+        margin-top: 90px;
     }
 
     .btn-menu {
@@ -1262,6 +1691,14 @@ QUIENES SOMOS?
         z-index: 1050;
     }
 
+    .hacemosDivUl2 li {
+        font-size: 16px;
+    }
+
+    .botonEnviar {
+        width: 90%;
+    }
+
     /* Menú Offcanvas */
 
     .offcanvas.offcanvas-top {
@@ -1272,10 +1709,35 @@ QUIENES SOMOS?
         padding: 0;
     }
 
+    .elegitext1 {
+        font-size: 16px;
+        text-align: left;
+    }
+
     .btn-leo-nav {
         position: absolute;
         right: 5%;
         top: 5%;
+    }
+
+    .footerMail {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .elegiLogoTitle h3 {
+        font-size: 24px;
+    }
+
+    .videoYutu {
+        padding: 0 20px;
+    }
+
+    .bannerHome video {
+        height: 100%; /* Asegura que el video cubra bien la pantalla */
+        width: 100%;
+        object-fit: cover;
+        min-width: 100%;
     }
 
     button {
@@ -1287,7 +1749,7 @@ QUIENES SOMOS?
         background-color: #5B5450;
         height: fit-content;
         max-height: none;
-        border-radius: 0px 0px 30px 30px;
+        border-radius: 0 0 40px 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1341,7 +1803,7 @@ QUIENES SOMOS?
         padding: 18px;
         text-align: center;
         width: 100%;
-        border-radius: 0px 0px 0px 40px;
+        border-radius: 0 0 0 40px;
     }
 
     .contact-btn {
@@ -1352,9 +1814,9 @@ QUIENES SOMOS?
         font-weight: bold;
     }
 
-
-
-
+    .prensaDivWeb {
+        justify-content: center;
+    }
 
     .leoNav2 {
         justify-content: flex-start;
@@ -1367,6 +1829,7 @@ QUIENES SOMOS?
     }
 
     .elegiTitleH2 {
+        font-size: 22px;
         margin: 0;
     }
 
@@ -1377,26 +1840,56 @@ QUIENES SOMOS?
     }
 
     .esenciaTitle {
-        margin-top: 10vh;
+        margin-top: 5vh;
+        font-size: 22px;
+    }
+
+    .tituloContacto {
+        font-size: 22px;
+    }
+
+    .onusTitle {
+        margin-top: 5vh;
+        font-size: 22px;
+    }
+
+    .alianzasTitle {
+        margin-top: 5vh;
+        font-size: 22px;
     }
 
     .elegiDiv1 {
         flex-direction: column;
-        gap: 20px;
+        gap: 0;
     }
 
     .elegiExperienciaDiv {
-        width: 100%;
+        width: 80vw;
         margin-top: 20px;
         padding: 40px 15px;
     }
 
-    .hacemosTitle {
-        margin-top: 10vh;
+    .card-title {
+        font-size: 18px;
     }
 
+    .card-text {
+        font-size: 14px;
+    }
+
+    .hacemosTitle {
+        margin-top: 5vh;
+        font-size: 22px;
+    }
+
+    .prensaTitle {
+        font-size: 22px;
+    }
+
+
     .sociosTitle {
-        margin-top: 10vh;
+        margin-top: 5vh;
+        font-size: 22px;
     }
 
     .elegiDiv2 {
@@ -1405,6 +1898,18 @@ QUIENES SOMOS?
 
     .misionVision {
         width: 100%;
+    }
+
+    .contacto-text22 {
+        font-size: 16px;
+    }
+
+    .misionVistionMobile1 {
+        border-radius: 40px 40px 0 0;
+    }
+
+    .misionVistionMobile2 {
+        border-radius: 0 0 40px 40px;
     }
 
     .alianzasDiv {
@@ -1428,14 +1933,20 @@ QUIENES SOMOS?
 
     .confianImg {
         opacity: 1;
+        width: 100px;
     }
 
     .alianzaImg {
         opacity: 1;
+        width: 100px;
     }
 
     .confian2 {
         width: 200px;
+    }
+
+    .text-align-leo-right {
+        text-align: right;
     }
 
     .carrouselhacemos {
@@ -1473,6 +1984,16 @@ QUIENES SOMOS?
         text-align: center;
     }
 
+    .inputTexto,
+    .inputTelefono,
+    .inputCorreo::placeholder {
+        font-size: 16px;
+    }
+
+    .inputMensaje::placeholder {
+        font-size: 16px;
+    }
+
     .socioBtnDiv {
         height: auto;
         margin-bottom: 20px;
@@ -1498,10 +2019,6 @@ QUIENES SOMOS?
         width: 150px;
     }
 
-    .socioDiv {
-        height: fit-content;
-    }
-
     .prensaDiv {
         display: none;
     }
@@ -1511,8 +2028,11 @@ QUIENES SOMOS?
     }
 
     .cardLeo {
-        width: 100%;
-        margin: auto;
+        width: 80%;
+    }
+
+    .derechos {
+        font-size: 14px;
     }
 
     .footerBiored {
@@ -1543,6 +2063,7 @@ QUIENES SOMOS?
     .bannerFinalTitle {
         max-width: none;
         font-size: 25px;
+        padding: 40px;
     }
 
     .formularioContacto {
@@ -1573,7 +2094,7 @@ QUIENES SOMOS?
 
     .bannerFinal {
         height: auto;
-        padding: 10vh 0;
+        padding: 15vh 0;
         margin-top: 20px;
     }
 
@@ -1582,9 +2103,84 @@ QUIENES SOMOS?
     .equipoBannerText {
         font-size: 30px;
     }
+
+    .equipoPrologueText {
+        font-size: 18px;
+    }
+
+    .equipo-card img {
+        height: 230px;
+        width: 230px;
+    }
+
+    .quienesCarousel990 {
+        width: 100vw;
+    }
+
+    .prensaCarouselSection {
+        display: block;
+    }
+
+    .prensaSectionWeb {
+        display: none;
+    }
+
+    .containerPrensaMobile {
+        width: 93vw;
+        margin: 20px 0 20px 20px;
+    }
+
+    .cardPrensaMobile {
+        max-width: 300px;
+    }
+
+    .sociosTitleMobile{
+        display: block;
+    }
+
+    .agrodesignLogo {
+        display: none;
+    }
+
+    .forjaLogo {
+        display: none;
+    }
+
+    #my-video2 {
+        width: 90vw;
+        height: 300px;
+    }
+
+    .sociosDesplegableMobile {
+        display: none;
+    }
+
+    .sociosDesplegableMobile2 {
+        display: none;
+    }
+
+    .sociosBtnDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .socioImgSegunda {
+        height: 300px;
+    }
+
+    .imgForjaOrder {
+        order: 20;
+    }
 }
 
 @media (max-width: 770px) {
+
+    .textEquipo{
+        padding: 0;
+    }
 
     #esencia {
         position: relative;
@@ -1601,14 +2197,12 @@ QUIENES SOMOS?
 
     .carrouselContacto {
         display: block;
-        margin: auto;
     }
 
     .equipo-card {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
         text-align: center;
         width: 100%;
         min-height: 400px;
@@ -1624,4 +2218,8 @@ QUIENES SOMOS?
     #carouselExample {
         width: 100vw;
     }
+
+
 }
+
+

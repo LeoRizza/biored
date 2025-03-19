@@ -7,7 +7,8 @@
     <meta name="description" content="Conoce al equipo de Biored, expertos en agricultura regenerativa.">
     <meta name="keywords" content="Biored, equipo, quiénes somos, agricultura regenerativa">
     <meta name="author" content="Biored">
-    <title>Quiénes Somos - Biored</title>
+    <link rel="icon" href="./img/logoYellow.svg" type="image/x-icon">
+    <title>Qué Hacemos - Biored</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet"
@@ -23,10 +24,10 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg leoNavbar">
+        <nav class="navbar navbar-expand-lg leoNavbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img class="logoBio" src="./img/logoYellow.svg" alt="Logo Biored" width="65" height="65">
+                    <img class="logoBio" src="./img/footerLogo.svg" alt="Logo Biored" width="65" height="65">
                 </a>
                 <button class="btn btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
                     ☰
@@ -58,7 +59,7 @@
                             <li class="nav-item navItemList">
                                 <a class="navBtn" href="./prensa.html">Prensa</a>
                             </li>
-                            <li class="nav-item navItemList">
+                            <li class="nav-item">
                                 <a class="contactaBtn" href="./contacto.html">Contacto</a>
                             </li>
                         </ul>
@@ -76,7 +77,7 @@
             <img class="logoPrincipalNav" src="./img/biored-logos-01.svg" alt="logo mobil principal">
             <div class="offcanvas-body">
                 <ul class="menu-list">
-                    <li><a href="./index.html" class="menu-item active">Home</a></li>
+                    <li><a href="./index.html" class="menu-item">Home</a></li>
                     <li><a href="./hacemos.html" class="menu-item">Qué hacemos</a></li>
                     <li><a href="./quienes.html" class="menu-item">Quiénes somos</a></li>
                     <li><a href="./socios.html" class="menu-item">Socios estratégicos</a></li>
@@ -94,27 +95,29 @@
     <section class="socios">
         <div class="bannerEquipo">
             <div class="equipo-banner-content">
-                <h4 class="equipoBannerText">Socios Estratégicos</h4>
+                <h4 class="equipoBannerText">Qué Hacemos</h4>
             </div>
         </div>
     </section>
 
     <section>
-        <!-- From Uiverse.io by SivarajRathinam -->
         <div class="accordion">
             <div class="accordion-item">
-                <input type="radio" id="section1" name="accordion" />
+                <input type="radio" id="section1" name="accordion" class="accordion-toggle" />
                 <label for="section1" class="accordion-header">
-                    <label class="accordion-title">Consultoría y Dirección Técnica</label>
+                    <label class="accordion-title">Asesoría y dirección técnica</label>
                     <div class="accordion-icon">
-                        <svg viewBox="0 0 16 16" fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                                fill="currentColor"></path>
-                        </svg>
+                        <img src="./img/arrow.svg" alt="flecha hacia abajo" style="z-index: 2;">
                     </div>
                 </label>
                 <div class="content">
+                    <h2 class="estrategicosTitle">Asesoría</h2>
+                    <p class="estrategicosText">Brindamos asesoramiento y soluciones a empresas de producción
+                        agropecuaria y otros actores de la
+                        cadena de valor, como también a empresas de otros sectores, con el objetivo de analizar nuevos
+                        proyectos, optimizar procesos, y mejorar la rentabilidad, sostenibilidad y sustentabilidad de
+                        sus actividades. <br> Ambas líneas de servicio están orientadas equilibrar productividad,
+                        rentabilidad y cuidado del ambiente.</p>
                     <h2 class="estrategicosTitle">Dirección Técnica</h2>
                     <p class="estrategicosText">Acompañamos a productores en el proceso de producción agrícola
                         regenerativa, brindando
@@ -123,27 +126,18 @@
                         cultivos, fertilización eficiente y la implementación de cultivos de servicios que mejoren la
                         salud del suelo y optimicen la productividad. Nuestro objetivo es garantizar prácticas
                         sostenibles y rentables para nuestros clientes, adaptándonos a sus necesidades específicas y las
-                        particularidades de sus tierras y empresas.</p>
-                    <h2 class="estrategicosTitle">Consultoría</h2>
-                    <p class="estrategicosText">Brindamos asesoramiento y soluciones a empresas de producción
-                        agropecuaria y otros actores de la
-                        cadena de valor, como también a empresas de otros sectores, con el objetivo de analizar nuevos
-                        proyectos, optimizar procesos, y mejorar la rentabilidad, sostenibilidad y sustentabilidad de
-                        sus actividades. <br> Ambas líneas de servicio están orientadas equilibrar productividad,
-                        rentabilidad y cuidado del ambiente.</p>
+                        particularidades de sus tierras y empresas.
+                    </p>
+                    <img class="hacemosAsesoriaImg" src="./img/asesoriaImg.avif" alt="">
                 </div>
             </div>
 
             <div class="accordion-item">
-                <input checked="" type="radio" id="section2" name="accordion" />
+                <input type="radio" id="section2" name="accordion" class="accordion-toggle" />
                 <label for="section2" class="accordion-header">
-                    <label class="accordion-title">Herramientas de recomendacion agronomica basadas en IA</label>
+                    <label class="accordion-title">Herramientas de recomendación agronómica basadas en IA</label>
                     <div class="accordion-icon">
-                        <svg viewBox="0 0 16 16" fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                                fill="currentColor"></path>
-                        </svg>
+                        <img src="./img/arrow.svg" alt="flecha hacia abajo" style="z-index: 200;">
                     </div>
                 </label>
                 <div class="content">
@@ -153,27 +147,24 @@
                         tecnologías de procesos. Un ejemplo son cultivos de servicio, lo cual incluye especies, fechas
                         de siembra, estrategias de fertilización, consumo de agua, momento de interrupción, entre otros.
                     </p>
+                    <img class="hacemosAsesoriaImg" src="./img/asesoriaImg2.avif" alt="">
                 </div>
             </div>
+
             <div class="accordion-item">
-                <input type="radio" id="section3" name="accordion" />
+                <input type="radio" id="section3" name="accordion" class="accordion-toggle" />
                 <label for="section3" class="accordion-header">
                     <label class="accordion-title">HUB de Capacitaciones</label>
                     <div class="accordion-icon">
-                        <svg viewBox="0 0 16 16" fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                                fill="currentColor"></path>
-                        </svg>
+                        <img src="./img/arrow.svg" alt="flecha hacia abajo" style="z-index: 200;">
                     </div>
                 </label>
                 <div class="content">
-                    <p>
                     <h2 class="estrategicosTitle">Cursos</h2>
                     <p class="estrategicosText">Los cursos de formación tienen como objetivo proporcionar conocimiento
                         clave para intensificar la producción agropecuaria sin comprometer la salud ambiental ni los
                         recursos futuros. Los participantes aprenden de la mano de expertos como científicos, profesores
-                        y productores con amplia experiencia. <br> Algunos de los temas que se tratan son:</p>
+                        y productores con amplia experiencia. Algunos de los temas que se tratan son:</p>
                     <div class="hacemosDivUl2">
                         <ul class="hacemosUl2">
                             <li>Crisis Climática y Humanitaria Global.</li>
@@ -184,9 +175,6 @@
                             <li>Nuevas Herramientas y Tecnologías.</li>
                         </ul>
                     </div>
-                    <ul>
-
-                    </ul>
                     <h2 class="estrategicosTitle">Charlas</h2>
                     <p class="estrategicosText">Ofrecemos charlas personalizadas dirigidas tanto a empresas de
                         producción agropecuaria y actores de la cadena de valor, como a organizaciones de otros sectores
@@ -216,19 +204,18 @@
                     </div>
                     <p class="estrategicosText">Enfoque colaborativo: Promovemos la integración de todos los actores de
                         la cadena de valor agropecuaria, generando sinergias que impulsen negocios sostenibles y
-                        escalables.</p>
+                        escalables.
+                    </p>
+                    <img class="hacemosAsesoriaImg" src="./img/asesoriaImg3.avif" alt="">
                 </div>
             </div>
+
             <div class="accordion-item">
-                <input type="radio" id="section4" name="accordion" />
+                <input type="radio" id="section4" name="accordion" class="accordion-toggle" />
                 <label for="section4" class="accordion-header">
                     <label class="accordion-title">I+D de Productos y Tecnologías</label>
                     <div class="accordion-icon">
-                        <svg viewBox="0 0 16 16" fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
-                                fill="currentColor"></path>
-                        </svg>
+                        <img src="./img/arrow.svg" alt="flecha hacia abajo" style="z-index: 200;">
                     </div>
                 </label>
                 <div class="content">
@@ -240,16 +227,21 @@
                     <div class="hacemosDivUl2">
                         <ul class="hacemosUl2">
                             <li>Investigadores: Expertos que aportan rigor científico y validación técnica.</li>
-                            <li>Empresas de insumos: Proveedores de semillas, fertilizantes, fitosanitarios, maquinaria y tecnologías digitales.</li>
-                            <li>Productores y asesores: Actores que prueban y adoptan las soluciones en sus sistemas productivos.</li>
-                            <li>Comercializadores: Socios clave para ampliar la escala y difusión de las innovaciones.</li>
+                            <li>Empresas de insumos: Proveedores de semillas, fertilizantes, fitosanitarios, maquinaria
+                                y tecnologías digitales.</li>
+                            <li>Productores y asesores: Actores que prueban y adoptan las soluciones en sus sistemas
+                                productivos.</li>
+                            <li>Comercializadores: Socios clave para ampliar la escala y difusión de las innovaciones.
+                            </li>
                         </ul>
                     </div>
+                    <img class="hacemosAsesoriaImg" src="./img/asesoriaImg4.avif" alt="">
                 </div>
             </div>
         </div>
-
     </section>
+
+
 
     <!-- Footer -->
     <footer class="footerBiored">
@@ -262,16 +254,22 @@
             <p class="footerContact">Contacto</p>
             <p class="footerDir">Av. Corrientes 800,</p>
             <p class="footerDir">Laboulaye, Córdoba.</p>
-            <p class="footerMail">info@biored.com</p>
-            <div>
-                <img src="./img/redesfooter1.svg" alt="">
-                <img src="./img/redesfooter2.svg" alt="">
+            <p class="footerMail">consultora@bioredarg.com</p>
+            <div class="footerDivRedes">
+                <a href="https://www.instagram.com/bioredargentina/" target="_blank"><img src="./img/redesfooter1.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/lucas-javier-andreoni-66136636/" target="_blank"><img src="./img/redesfooter2.svg" alt=""></a>
+                <a href="https://www.youtube.com/@bioredargentina7483" target="_blank"><img src="./img/redesfooter5.svg" alt=""></a>
                 <img src="./img/redesfooter3.svg" alt="">
-                <img src="./img/redesfooter4.svg" alt="">
+                <a href="https://www.facebook.com/search/top?q=biored%20argentina" target="_blank"><img src="./img/redesfooter4.svg" alt=""></a>
             </div>
         </div>
 
     </footer>
+
+    <div class="botonWhatsApp">
+        <a href="https://wa.me/5493425163966?text=Hola" target="_blank"><img class="img-fluid"
+                src="./img/whatsappIcon.avif" alt="icono WhatsApp"></a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
